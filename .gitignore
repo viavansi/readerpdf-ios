@@ -1,0 +1,25 @@
+.DS_Store
+Podfile.lock
+Pods/
+Build/**/*
+!Build/Products/Debug-iphoneos/libPods.a
+!Build/Products/Debug-iphonesimulator/libPods.a
+!Build/Products/Release-iphoneos/libPods.a
+!Build/Products/Release-iphonesimulator/libPods.a
+
+# Xcode
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+*.xcworkspace
+!default.xcworkspace
+xcuserdata
+profile
+*.moved-aside
+DerivedData
+.idea/

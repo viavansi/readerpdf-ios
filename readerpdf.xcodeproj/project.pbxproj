@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA105CBA18300A9B00D150A9 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = EA105CB918300A9B00D150A9 /* Annotation.m */; };
+		EA4DDBC3182E4E2300092048 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA4DDBC2182E4E2300092048 /* Foundation.framework */; };
+		EA4DDBC5182E4E2300092048 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA4DDBC4182E4E2300092048 /* CoreGraphics.framework */; };
+		EA4DDBC7182E4E2300092048 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA4DDBC6182E4E2300092048 /* UIKit.framework */; };
+		EA4DDBCD182E4E2300092048 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA4DDBCB182E4E2300092048 /* InfoPlist.strings */; };
+		EA4DDBCF182E4E2300092048 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DDBCE182E4E2300092048 /* main.m */; };
+		EA4DDBD3182E4E2300092048 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DDBD2182E4E2300092048 /* AppDelegate.m */; };
+		EA4DDBD5182E4E2300092048 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA4DDBD4182E4E2300092048 /* Images.xcassets */; };
+		EA4DDBDC182E4E2300092048 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA4DDBDB182E4E2300092048 /* XCTest.framework */; };
+		EA4DDBDD182E4E2300092048 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA4DDBC2182E4E2300092048 /* Foundation.framework */; };
+		EA4DDBDE182E4E2300092048 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA4DDBC6182E4E2300092048 /* UIKit.framework */; };
+		EA4DDBE6182E4E2300092048 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA4DDBE4182E4E2300092048 /* InfoPlist.strings */; };
+		EA4DDBE8182E4E2300092048 /* readerpdfTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DDBE7182E4E2300092048 /* readerpdfTests.m */; };
+		EA4DDC1C182E4EE000092048 /* CGPDFDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DDBF3182E4EE000092048 /* CGPDFDocument.m */; };
+		EA4DDC1D182E4EE000092048 /* ReaderAnnotations.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DDBF5182E4EE000092048 /* ReaderAnnotations.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EA4DDC1E182E4EE000092048 /* ReaderConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DDBF7182E4EE000092048 /* ReaderConstants.m */; };
+		EA4DDC1F182E4EE000092048 /* ReaderContentPage.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DDBF9182E4EE000092048 /* ReaderContentPage.m */; };
+		EA4DDC20182E4EE000092048 /* ReaderContentTile.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DDBFB182E4EE000092048 /* ReaderContentTile.m */; };
+		EA4DDC21182E4EE000092048 /* ReaderContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DDBFD182E4EE000092048 /* ReaderContentView.m */; };
+		EA4DDC22182E4EE000092048 /* ReaderDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DDBFF182E4EE000092048 /* ReaderDocument.m */; };
+		EA4DDC23182E4EE000092048 /* ReaderDocumentOutline.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DDC01182E4EE000092048 /* ReaderDocumentOutline.m */; };
+		EA4DDC24182E4EE000092048 /* ReaderMainPagebar.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DDC03182E4EE000092048 /* ReaderMainPagebar.m */; };
+		EA4DDC25182E4EE000092048 /* ReaderMainToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DDC05182E4EE000092048 /* ReaderMainToolbar.m */; };
+		EA4DDC26182E4EE000092048 /* ReaderThumbCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DDC07182E4EE000092048 /* ReaderThumbCache.m */; };
+		EA4DDC27182E4EE000092048 /* ReaderThumbFetch.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DDC09182E4EE000092048 /* ReaderThumbFetch.m */; };
+		EA4DDC28182E4EE000092048 /* ReaderThumbQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DDC0B182E4EE000092048 /* ReaderThumbQueue.m */; };
+		EA4DDC29182E4EE000092048 /* ReaderThumbRender.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DDC0D182E4EE000092048 /* ReaderThumbRender.m */; };
+		EA4DDC2A182E4EE000092048 /* ReaderThumbRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DDC0F182E4EE000092048 /* ReaderThumbRequest.m */; };
+		EA4DDC2B182E4EE000092048 /* ReaderThumbsView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DDC11182E4EE000092048 /* ReaderThumbsView.m */; };
+		EA4DDC2C182E4EE000092048 /* ReaderThumbView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DDC13182E4EE000092048 /* ReaderThumbView.m */; };
+		EA4DDC2D182E4EE000092048 /* ReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DDC15182E4EE000092048 /* ReaderViewController.m */; };
+		EA4DDC2E182E4EE000092048 /* ThumbsMainToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DDC17182E4EE000092048 /* ThumbsMainToolbar.m */; };
+		EA4DDC2F182E4EE000092048 /* ThumbsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DDC19182E4EE000092048 /* ThumbsViewController.m */; };
+		EA4DDC30182E4EE000092048 /* UIXToolbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DDC1B182E4EE000092048 /* UIXToolbarView.m */; };
+		EA4DDC32182E512400092048 /* example.pdf in Resources */ = {isa = PBXBuildFile; fileRef = EA4DDC31182E512400092048 /* example.pdf */; };
+		EA4DDC35182E536700092048 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA4DDC34182E536700092048 /* CoreFoundation.framework */; };
+		EA4DDC37182E57C800092048 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA4DDC36182E57C800092048 /* ImageIO.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA4DDBDF182E4E2300092048 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA4DDBB7182E4E2300092048 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA4DDBBE182E4E2300092048;
+			remoteInfo = readerpdf;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA105CB818300A9B00D150A9 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
+		EA105CB918300A9B00D150A9 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
+		EA4DDBBF182E4E2300092048 /* readerpdf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = readerpdf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA4DDBC2182E4E2300092048 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EA4DDBC4182E4E2300092048 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EA4DDBC6182E4E2300092048 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EA4DDBCA182E4E2300092048 /* readerpdf-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "readerpdf-Info.plist"; sourceTree = "<group>"; };
+		EA4DDBCC182E4E2300092048 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA4DDBCE182E4E2300092048 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA4DDBD0182E4E2300092048 /* readerpdf-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "readerpdf-Prefix.pch"; sourceTree = "<group>"; };
+		EA4DDBD1182E4E2300092048 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EA4DDBD2182E4E2300092048 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EA4DDBD4182E4E2300092048 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EA4DDBDA182E4E2300092048 /* readerpdfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = readerpdfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA4DDBDB182E4E2300092048 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EA4DDBE3182E4E2300092048 /* readerpdfTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "readerpdfTests-Info.plist"; sourceTree = "<group>"; };
+		EA4DDBE5182E4E2300092048 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA4DDBE7182E4E2300092048 /* readerpdfTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = readerpdfTests.m; sourceTree = "<group>"; };
+		EA4DDBF2182E4EE000092048 /* CGPDFDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPDFDocument.h; sourceTree = "<group>"; };
+		EA4DDBF3182E4EE000092048 /* CGPDFDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPDFDocument.m; sourceTree = "<group>"; };
+		EA4DDBF4182E4EE000092048 /* ReaderAnnotations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderAnnotations.h; sourceTree = "<group>"; };
+		EA4DDBF5182E4EE000092048 /* ReaderAnnotations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderAnnotations.m; sourceTree = "<group>"; };
+		EA4DDBF6182E4EE000092048 /* ReaderConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderConstants.h; sourceTree = "<group>"; };
+		EA4DDBF7182E4EE000092048 /* ReaderConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderConstants.m; sourceTree = "<group>"; };
+		EA4DDBF8182E4EE000092048 /* ReaderContentPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderContentPage.h; sourceTree = "<group>"; };
+		EA4DDBF9182E4EE000092048 /* ReaderContentPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderContentPage.m; sourceTree = "<group>"; };
+		EA4DDBFA182E4EE000092048 /* ReaderContentTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderContentTile.h; sourceTree = "<group>"; };
+		EA4DDBFB182E4EE000092048 /* ReaderContentTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderContentTile.m; sourceTree = "<group>"; };
+		EA4DDBFC182E4EE000092048 /* ReaderContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderContentView.h; sourceTree = "<group>"; };
+		EA4DDBFD182E4EE000092048 /* ReaderContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderContentView.m; sourceTree = "<group>"; };
+		EA4DDBFE182E4EE000092048 /* ReaderDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderDocument.h; sourceTree = "<group>"; };
+		EA4DDBFF182E4EE000092048 /* ReaderDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderDocument.m; sourceTree = "<group>"; };
+		EA4DDC00182E4EE000092048 /* ReaderDocumentOutline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderDocumentOutline.h; sourceTree = "<group>"; };
+		EA4DDC01182E4EE000092048 /* ReaderDocumentOutline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderDocumentOutline.m; sourceTree = "<group>"; };
+		EA4DDC02182E4EE000092048 /* ReaderMainPagebar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderMainPagebar.h; sourceTree = "<group>"; };
+		EA4DDC03182E4EE000092048 /* ReaderMainPagebar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderMainPagebar.m; sourceTree = "<group>"; };
+		EA4DDC04182E4EE000092048 /* ReaderMainToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderMainToolbar.h; sourceTree = "<group>"; };
+		EA4DDC05182E4EE000092048 /* ReaderMainToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderMainToolbar.m; sourceTree = "<group>"; };
+		EA4DDC06182E4EE000092048 /* ReaderThumbCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderThumbCache.h; sourceTree = "<group>"; };
+		EA4DDC07182E4EE000092048 /* ReaderThumbCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderThumbCache.m; sourceTree = "<group>"; };
+		EA4DDC08182E4EE000092048 /* ReaderThumbFetch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderThumbFetch.h; sourceTree = "<group>"; };
+		EA4DDC09182E4EE000092048 /* ReaderThumbFetch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderThumbFetch.m; sourceTree = "<group>"; };
+		EA4DDC0A182E4EE000092048 /* ReaderThumbQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderThumbQueue.h; sourceTree = "<group>"; };
+		EA4DDC0B182E4EE000092048 /* ReaderThumbQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderThumbQueue.m; sourceTree = "<group>"; };
+		EA4DDC0C182E4EE000092048 /* ReaderThumbRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderThumbRender.h; sourceTree = "<group>"; };
+		EA4DDC0D182E4EE000092048 /* ReaderThumbRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderThumbRender.m; sourceTree = "<group>"; };
+		EA4DDC0E182E4EE000092048 /* ReaderThumbRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderThumbRequest.h; sourceTree = "<group>"; };
+		EA4DDC0F182E4EE000092048 /* ReaderThumbRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderThumbRequest.m; sourceTree = "<group>"; };
+		EA4DDC10182E4EE000092048 /* ReaderThumbsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderThumbsView.h; sourceTree = "<group>"; };
+		EA4DDC11182E4EE000092048 /* ReaderThumbsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderThumbsView.m; sourceTree = "<group>"; };
+		EA4DDC12182E4EE000092048 /* ReaderThumbView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderThumbView.h; sourceTree = "<group>"; };
+		EA4DDC13182E4EE000092048 /* ReaderThumbView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderThumbView.m; sourceTree = "<group>"; };
+		EA4DDC14182E4EE000092048 /* ReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderViewController.h; sourceTree = "<group>"; };
+		EA4DDC15182E4EE000092048 /* ReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderViewController.m; sourceTree = "<group>"; };
+		EA4DDC16182E4EE000092048 /* ThumbsMainToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThumbsMainToolbar.h; sourceTree = "<group>"; };
+		EA4DDC17182E4EE000092048 /* ThumbsMainToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThumbsMainToolbar.m; sourceTree = "<group>"; };
+		EA4DDC18182E4EE000092048 /* ThumbsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThumbsViewController.h; sourceTree = "<group>"; };
+		EA4DDC19182E4EE000092048 /* ThumbsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThumbsViewController.m; sourceTree = "<group>"; };
+		EA4DDC1A182E4EE000092048 /* UIXToolbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIXToolbarView.h; sourceTree = "<group>"; };
+		EA4DDC1B182E4EE000092048 /* UIXToolbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIXToolbarView.m; sourceTree = "<group>"; };
+		EA4DDC31182E512400092048 /* example.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = example.pdf; sourceTree = "<group>"; };
+		EA4DDC34182E536700092048 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		EA4DDC36182E57C800092048 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA4DDBBC182E4E2300092048 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA4DDC37182E57C800092048 /* ImageIO.framework in Frameworks */,
+				EA4DDC35182E536700092048 /* CoreFoundation.framework in Frameworks */,
+				EA4DDBC5182E4E2300092048 /* CoreGraphics.framework in Frameworks */,
+				EA4DDBC7182E4E2300092048 /* UIKit.framework in Frameworks */,
+				EA4DDBC3182E4E2300092048 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA4DDBD7182E4E2300092048 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA4DDBDC182E4E2300092048 /* XCTest.framework in Frameworks */,
+				EA4DDBDE182E4E2300092048 /* UIKit.framework in Frameworks */,
+				EA4DDBDD182E4E2300092048 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA4DDBB6182E4E2300092048 = {
+			isa = PBXGroup;
+			children = (
+				EA4DDBC8182E4E2300092048 /* readerpdf */,
+				EA4DDBE1182E4E2300092048 /* readerpdfTests */,
+				EA4DDBC1182E4E2300092048 /* Frameworks */,
+				EA4DDBC0182E4E2300092048 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA4DDBC0182E4E2300092048 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA4DDBBF182E4E2300092048 /* readerpdf.app */,
+				EA4DDBDA182E4E2300092048 /* readerpdfTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA4DDBC1182E4E2300092048 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA4DDC36182E57C800092048 /* ImageIO.framework */,
+				EA4DDC34182E536700092048 /* CoreFoundation.framework */,
+				EA4DDBC2182E4E2300092048 /* Foundation.framework */,
+				EA4DDBC4182E4E2300092048 /* CoreGraphics.framework */,
+				EA4DDBC6182E4E2300092048 /* UIKit.framework */,
+				EA4DDBDB182E4E2300092048 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA4DDBC8182E4E2300092048 /* readerpdf */ = {
+			isa = PBXGroup;
+			children = (
+				EA4DDBF1182E4EE000092048 /* Sources */,
+				EA4DDBC9182E4E2300092048 /* Supporting Files */,
+				EA4DDBD1182E4E2300092048 /* AppDelegate.h */,
+				EA4DDBD2182E4E2300092048 /* AppDelegate.m */,
+				EA4DDC31182E512400092048 /* example.pdf */,
+				EA4DDBD4182E4E2300092048 /* Images.xcassets */,
+			);
+			path = readerpdf;
+			sourceTree = "<group>";
+		};
+		EA4DDBC9182E4E2300092048 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA4DDBCA182E4E2300092048 /* readerpdf-Info.plist */,
+				EA4DDBCB182E4E2300092048 /* InfoPlist.strings */,
+				EA4DDBCE182E4E2300092048 /* main.m */,
+				EA4DDBD0182E4E2300092048 /* readerpdf-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA4DDBE1182E4E2300092048 /* readerpdfTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA4DDBE7182E4E2300092048 /* readerpdfTests.m */,
+				EA4DDBE2182E4E2300092048 /* Supporting Files */,
+			);
+			path = readerpdfTests;
+			sourceTree = "<group>";
+		};
+		EA4DDBE2182E4E2300092048 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA4DDBE3182E4E2300092048 /* readerpdfTests-Info.plist */,
+				EA4DDBE4182E4E2300092048 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA4DDBF1182E4EE000092048 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EA4DDBF2182E4EE000092048 /* CGPDFDocument.h */,
+				EA4DDBF3182E4EE000092048 /* CGPDFDocument.m */,
+				EA4DDBF4182E4EE000092048 /* ReaderAnnotations.h */,
+				EA4DDBF5182E4EE000092048 /* ReaderAnnotations.m */,
+				EA4DDBF6182E4EE000092048 /* ReaderConstants.h */,
+				EA4DDBF7182E4EE000092048 /* ReaderConstants.m */,
+				EA4DDBF8182E4EE000092048 /* ReaderContentPage.h */,
+				EA4DDBF9182E4EE000092048 /* ReaderContentPage.m */,
+				EA4DDBFA182E4EE000092048 /* ReaderContentTile.h */,
+				EA4DDBFB182E4EE000092048 /* ReaderContentTile.m */,
+				EA4DDBFC182E4EE000092048 /* ReaderContentView.h */,
+				EA4DDBFD182E4EE000092048 /* ReaderContentView.m */,
+				EA4DDBFE182E4EE000092048 /* ReaderDocument.h */,
+				EA4DDBFF182E4EE000092048 /* ReaderDocument.m */,
+				EA4DDC00182E4EE000092048 /* ReaderDocumentOutline.h */,
+				EA4DDC01182E4EE000092048 /* ReaderDocumentOutline.m */,
+				EA4DDC02182E4EE000092048 /* ReaderMainPagebar.h */,
+				EA4DDC03182E4EE000092048 /* ReaderMainPagebar.m */,
+				EA4DDC04182E4EE000092048 /* ReaderMainToolbar.h */,
+				EA4DDC05182E4EE000092048 /* ReaderMainToolbar.m */,
+				EA4DDC06182E4EE000092048 /* ReaderThumbCache.h */,
+				EA4DDC07182E4EE000092048 /* ReaderThumbCache.m */,
+				EA4DDC08182E4EE000092048 /* ReaderThumbFetch.h */,
+				EA4DDC09182E4EE000092048 /* ReaderThumbFetch.m */,
+				EA4DDC0A182E4EE000092048 /* ReaderThumbQueue.h */,
+				EA4DDC0B182E4EE000092048 /* ReaderThumbQueue.m */,
+				EA4DDC0C182E4EE000092048 /* ReaderThumbRender.h */,
+				EA4DDC0D182E4EE000092048 /* ReaderThumbRender.m */,
+				EA4DDC0E182E4EE000092048 /* ReaderThumbRequest.h */,
+				EA4DDC0F182E4EE000092048 /* ReaderThumbRequest.m */,
+				EA4DDC10182E4EE000092048 /* ReaderThumbsView.h */,
+				EA4DDC11182E4EE000092048 /* ReaderThumbsView.m */,
+				EA4DDC12182E4EE000092048 /* ReaderThumbView.h */,
+				EA4DDC13182E4EE000092048 /* ReaderThumbView.m */,
+				EA4DDC14182E4EE000092048 /* ReaderViewController.h */,
+				EA4DDC15182E4EE000092048 /* ReaderViewController.m */,
+				EA4DDC16182E4EE000092048 /* ThumbsMainToolbar.h */,
+				EA4DDC17182E4EE000092048 /* ThumbsMainToolbar.m */,
+				EA4DDC18182E4EE000092048 /* ThumbsViewController.h */,
+				EA4DDC19182E4EE000092048 /* ThumbsViewController.m */,
+				EA4DDC1A182E4EE000092048 /* UIXToolbarView.h */,
+				EA4DDC1B182E4EE000092048 /* UIXToolbarView.m */,
+				EA105CB818300A9B00D150A9 /* Annotation.h */,
+				EA105CB918300A9B00D150A9 /* Annotation.m */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA4DDBBE182E4E2300092048 /* readerpdf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA4DDBEB182E4E2300092048 /* Build configuration list for PBXNativeTarget "readerpdf" */;
+			buildPhases = (
+				EA4DDBBB182E4E2300092048 /* Sources */,
+				EA4DDBBC182E4E2300092048 /* Frameworks */,
+				EA4DDBBD182E4E2300092048 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = readerpdf;
+			productName = readerpdf;
+			productReference = EA4DDBBF182E4E2300092048 /* readerpdf.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA4DDBD9182E4E2300092048 /* readerpdfTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA4DDBEE182E4E2300092048 /* Build configuration list for PBXNativeTarget "readerpdfTests" */;
+			buildPhases = (
+				EA4DDBD6182E4E2300092048 /* Sources */,
+				EA4DDBD7182E4E2300092048 /* Frameworks */,
+				EA4DDBD8182E4E2300092048 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA4DDBE0182E4E2300092048 /* PBXTargetDependency */,
+			);
+			name = readerpdfTests;
+			productName = readerpdfTests;
+			productReference = EA4DDBDA182E4E2300092048 /* readerpdfTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA4DDBB7182E4E2300092048 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Viafirma S.L.";
+				TargetAttributes = {
+					EA4DDBD9182E4E2300092048 = {
+						TestTargetID = EA4DDBBE182E4E2300092048;
+					};
+				};
+			};
+			buildConfigurationList = EA4DDBBA182E4E2300092048 /* Build configuration list for PBXProject "readerpdf" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EA4DDBB6182E4E2300092048;
+			productRefGroup = EA4DDBC0182E4E2300092048 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA4DDBBE182E4E2300092048 /* readerpdf */,
+				EA4DDBD9182E4E2300092048 /* readerpdfTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA4DDBBD182E4E2300092048 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA4DDC32182E512400092048 /* example.pdf in Resources */,
+				EA4DDBCD182E4E2300092048 /* InfoPlist.strings in Resources */,
+				EA4DDBD5182E4E2300092048 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA4DDBD8182E4E2300092048 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA4DDBE6182E4E2300092048 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA4DDBBB182E4E2300092048 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA4DDC23182E4EE000092048 /* ReaderDocumentOutline.m in Sources */,
+				EA4DDC29182E4EE000092048 /* ReaderThumbRender.m in Sources */,
+				EA4DDC25182E4EE000092048 /* ReaderMainToolbar.m in Sources */,
+				EA4DDBD3182E4E2300092048 /* AppDelegate.m in Sources */,
+				EA4DDC20182E4EE000092048 /* ReaderContentTile.m in Sources */,
+				EA4DDC22182E4EE000092048 /* ReaderDocument.m in Sources */,
+				EA4DDC1F182E4EE000092048 /* ReaderContentPage.m in Sources */,
+				EA4DDC2E182E4EE000092048 /* ThumbsMainToolbar.m in Sources */,
+				EA4DDC26182E4EE000092048 /* ReaderThumbCache.m in Sources */,
+				EA4DDC24182E4EE000092048 /* ReaderMainPagebar.m in Sources */,
+				EA4DDC27182E4EE000092048 /* ReaderThumbFetch.m in Sources */,
+				EA4DDC2C182E4EE000092048 /* ReaderThumbView.m in Sources */,
+				EA4DDC28182E4EE000092048 /* ReaderThumbQueue.m in Sources */,
+				EA4DDBCF182E4E2300092048 /* main.m in Sources */,
+				EA4DDC1E182E4EE000092048 /* ReaderConstants.m in Sources */,
+				EA4DDC1C182E4EE000092048 /* CGPDFDocument.m in Sources */,
+				EA4DDC2B182E4EE000092048 /* ReaderThumbsView.m in Sources */,
+				EA4DDC1D182E4EE000092048 /* ReaderAnnotations.m in Sources */,
+				EA105CBA18300A9B00D150A9 /* Annotation.m in Sources */,
+				EA4DDC21182E4EE000092048 /* ReaderContentView.m in Sources */,
+				EA4DDC2F182E4EE000092048 /* ThumbsViewController.m in Sources */,
+				EA4DDC30182E4EE000092048 /* UIXToolbarView.m in Sources */,
+				EA4DDC2A182E4EE000092048 /* ReaderThumbRequest.m in Sources */,
+				EA4DDC2D182E4EE000092048 /* ReaderViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA4DDBD6182E4E2300092048 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA4DDBE8182E4E2300092048 /* readerpdfTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA4DDBE0182E4E2300092048 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA4DDBBE182E4E2300092048 /* readerpdf */;
+			targetProxy = EA4DDBDF182E4E2300092048 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA4DDBCB182E4E2300092048 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA4DDBCC182E4E2300092048 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EA4DDBE4182E4E2300092048 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA4DDBE5182E4E2300092048 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA4DDBE9182E4E2300092048 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA4DDBEA182E4E2300092048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA4DDBEC182E4E2300092048 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "readerpdf/readerpdf-Prefix.pch";
+				INFOPLIST_FILE = "readerpdf/readerpdf-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EA4DDBED182E4E2300092048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "readerpdf/readerpdf-Prefix.pch";
+				INFOPLIST_FILE = "readerpdf/readerpdf-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EA4DDBEF182E4E2300092048 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/readerpdf.app/readerpdf";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "readerpdf/readerpdf-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "readerpdfTests/readerpdfTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EA4DDBF0182E4E2300092048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/readerpdf.app/readerpdf";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "readerpdf/readerpdf-Prefix.pch";
+				INFOPLIST_FILE = "readerpdfTests/readerpdfTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA4DDBBA182E4E2300092048 /* Build configuration list for PBXProject "readerpdf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA4DDBE9182E4E2300092048 /* Debug */,
+				EA4DDBEA182E4E2300092048 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA4DDBEB182E4E2300092048 /* Build configuration list for PBXNativeTarget "readerpdf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA4DDBEC182E4E2300092048 /* Debug */,
+				EA4DDBED182E4E2300092048 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA4DDBEE182E4E2300092048 /* Build configuration list for PBXNativeTarget "readerpdfTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA4DDBEF182E4E2300092048 /* Debug */,
+				EA4DDBF0182E4E2300092048 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA4DDBB7182E4E2300092048 /* Project object */;
+}

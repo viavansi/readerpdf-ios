@@ -714,12 +714,43 @@
 
 - (void)showAnnotation:(Annotation *)annotation
 {
-    ReaderContentView *contentView = [contentViews objectForKey:annotation.page];
+    ReaderContentView *targetPage = [contentViews objectForKey:annotation.page];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:annotation.image];
-    imageView.frame = annotation.frame;
-    imageView.center = annotation.point;
-    [[contentView theContentView] insertView:imageView];
-    [myContentViews setObject:contentView forKey:annotation.page];
+    
+    // Si existe...
+    if (targetPage){
+        if (document.pageNumber == annotation.page && annotation.image != nil && [imageView superview] == nil) {
+            UIView *content = targetPage.theContentView;
+            
+            float height = [annotation.height floatValue];
+            float y = [annotation.yPosition floatValue];
+            
+            CGFloat newY = content.frame.size.height - y - height;
+            CGRect picPosition = CGRectMake([annotation.xPosition floatValue], newY, [annotation.width floatValue], [annotation.height floatValue]);
+            
+            imageView.frame = picPosition;
+            [imageView.layer setBorderColor:[[UIColor grayColor] CGColor]];
+            [imageView.layer setBorderWidth:1.0];
+            [targetPage.theContentView addSubview:imageView];
+        }
+    }
+
+
+
+    
+    /*
+     CGFloat newY = content.frame.size.height - [[imagePosition objectForKey:@"y"] floatValue] - [[imagePosition objectForKey:@"height"] floatValue];
+     CGRect picPosition = CGRectMake([[imagePosition objectForKey:@"x"] floatValue], newY, [[imagePosition objectForKey:@"width"] floatValue], [[imagePosition objectForKey:@"height"] floatValue]);
+     
+     imageToDraw.frame = picPosition;
+     [imageToDraw.layer setBorderColor:[[UIColor grayColor] CGColor]];
+     [imageToDraw.layer setBorderWidth:1.0];
+     [targetPage.theContentView addSubview:imageToDraw];
+     */
+//    imageView.frame = annotation.frame;
+//    imageView.center = annotation.point;
+//    [[contentView theContentView] insertView:imageView];
+//    [myContentViews setObject:contentView forKey:annotation.page];
 }
 
 #pragma mark ReaderContentViewDelegate methods

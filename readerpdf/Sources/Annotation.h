@@ -13,6 +13,12 @@
 @property (nonatomic,strong) UIImage *image;
 @property (nonatomic) CGPoint point;
 @property (nonatomic) CGRect frame;
+
+@property (nonatomic, strong) NSString *xPosition;
+@property (nonatomic, strong) NSString *yPosition;
+@property (nonatomic, strong) NSString *width;
+@property (nonatomic, strong) NSString *height;
+
 @property (nonatomic,strong) NSNumber *page;
 
 @end

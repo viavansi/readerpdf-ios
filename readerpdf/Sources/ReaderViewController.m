@@ -369,20 +369,15 @@
     myContentViews = [[NSMutableDictionary alloc] init];
 	contentViews = [NSMutableDictionary new]; lastHideTime = [NSDate date];
     
-    if (self.delegate!=nil && [self.delegate respondsToSelector:@selector(continueReaderViewController:)]) {
-        UIBarButtonItem *continueButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"continue", @"") style:UIBarButtonItemStyleBordered target:self action:@selector(continueAction)];
-        self.navigationItem.rightBarButtonItem = continueButton;
-    }
+//    if (self.delegate!=nil && [self.delegate respondsToSelector:@selector(continueReaderViewController:)]) {
+//        UIBarButtonItem *continueButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"continue", @"") style:UIBarButtonItemStyleBordered target:self action:@selector(continueAction)];
+//        self.navigationItem.rightBarButtonItem = continueButton;
+//    }
 }
 
 - (void)continueAction
 {
-    if (signCount > 0) {
-        [self.delegate continueReaderViewController:self];
-    } else {
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"warning", @"Atención") message:NSLocalizedString(@"signDocumentMessage", @"Por favor, inserte la firma") delegate:self cancelButtonTitle:NSLocalizedString(@"OkKey", @"Ok") otherButtonTitles:nil, nil];
-        [alertView show];
-    }
+	[self.delegate continueReaderViewController:self];
 }
 
 - (void)viewWillAppear:(BOOL)animated

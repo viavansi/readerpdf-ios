@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name         = 'readerpdf'
-  s.version      = '1.0.0'
+  s.version      = '1.0.2'
   s.summary      = 'PDF Reader for signature'
   s.author = {
     'Jesus Lopez' => 'inyenia@gmail.com'
   }
   s.source = {
-    :git => 'gitolite@git.viavansi.com:readerpdf-ios',
-    :tag => "1.0.0"
+    :git => 'https://github.com/viavansi/readerpdf-ios.git',
+    :tag => "v1.0.2"
   }
   non_arc_files = 'readerpdf/Sources/ReaderAnnotations.m'
   s.requires_arc = true

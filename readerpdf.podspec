@@ -2,6 +2,7 @@ Pod::Spec.new do |s|
   s.name         = 'readerpdf'
   s.version      = '1.0.2'
   s.summary      = 'PDF Reader for signature'
+  s.homepage     = 'https://github.com/viavansi/readerpdf-ios'
   s.author = {
     'Jesus Lopez' => 'inyenia@gmail.com'
   }

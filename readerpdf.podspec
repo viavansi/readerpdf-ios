@@ -2,6 +2,7 @@ Pod::Spec.new do |s|
   s.name         = 'readerpdf'
   s.version      = '1.0.0'
   s.summary      = 'PDF Reader for signature'
+  s.homepage     = 'https://github.com/viavansi/readerpdf-ios'
   s.author = {
     'Jesus Lopez' => 'inyenia@gmail.com'
   }
@@ -18,5 +19,4 @@ Pod::Spec.new do |s|
     sna.source_files = non_arc_files
   end
   s.ios.framework = 'UIKit', 'Foundation', 'CoreGraphics', 'QuartzCore', 'ImageIO', 'MessageUI'
-  s.homepage     = 'http://www.viafirma.com'
 end

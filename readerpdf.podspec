@@ -19,4 +19,5 @@ Pod::Spec.new do |s|
     sna.source_files = non_arc_files
   end
   s.ios.framework = 'UIKit', 'Foundation', 'CoreGraphics', 'QuartzCore', 'ImageIO', 'MessageUI'
+  s.homepage     = 'http://www.viafirma.com'
 end
